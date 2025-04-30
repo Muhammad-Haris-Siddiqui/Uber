@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   text: {
     color: 'black',
     fontSize: 16,
-    fontFamily: 'JakartaBold',
+    fontFamily: 'JakartaBold, sans-serif',
   },
   dot: {
     width: "32%",
@@ -93,12 +93,13 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginRight: 40,
     marginLeft: 40,
-    justifyContent: "center",
+    // justifyContent: "center",
     textAlign: "center",
     alignItems: "center",
+    flexDirection:"column",
   },
   text3: {
-    fontFamily: "JakartaSemiBold",
+    fontFamily: "JakartaSemiBold, sans-serif",
     textAlign: "center",
     color: "#858585",
     marginRight: 40,
