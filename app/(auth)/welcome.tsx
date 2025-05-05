@@ -30,9 +30,9 @@ const Onboarding = () => {
             style={styles.image}
             source={item.image}
             />
-            <view style={styles.div2}>
+            <View style={styles.div2}>
               <Text style={styles.text2}>{item.title}</Text>
-            </view>
+            </View>
             <Text style={styles.text3} >{item.description}</Text>
           </View>
         ))}
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   text: {
     color: 'black',
     fontSize: 16,
-    fontFamily: 'JakartaBold, sans-serif',
+    fontFamily: 'Jakarta-Bold',
   },
   dot: {
     width: "32%",
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     flexDirection:"column",
   },
   text3: {
-    fontFamily: "JakartaSemiBold, sans-serif",
+    fontFamily: 'Jakarta-Bold',
     textAlign: "center",
     color: "#858585",
     marginRight: 40,

@@ -1,7 +1,10 @@
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Image } from "react-native";
 import CustomButton from "./customButton";
+import { icons } from "../constants";
 
-const OAuth = () => (
+const OAuth = () => {
+  const handleGoogleSignIn = async () => {};
+  return(
   <View>
     <View style={styles.div}>
       <View style={styles.div2}/>
@@ -10,9 +13,17 @@ const OAuth = () => (
     </View>
     <CustomButton
     title="Log in with google"
+    className="mt-5 w-full shadow-none"
+    IconLeft={() => (
+      <Image source={icons.google} resizeMode="contain" style={styles.img} />
+    )}
+    bgVarient="outline"
+    textVarient="primary"
+    onPress={handleGoogleSignIn}
     />
   </View>
 )
+};
 
 const styles = StyleSheet.create({
   div: {
@@ -35,6 +46,11 @@ const styles = StyleSheet.create({
   bttn: {
     marginTop: 5,
     alignSelf: 'stretch'
+  },
+  img: {
+    width: 20,
+    height: 20,
+    marginRight: 8,
   },
 });
 

@@ -17,7 +17,7 @@ const InputField = ({
       <View style={styles.input} >
         <Text style={styles.txt} className={'${labelStyle}'} >{label}</Text>
         <View style={styles.div} className={'${containerStyle}'} >
-          {icon && (<Image source={icon} style={styles.img} className={'${iconStyle}'} /> )}
+          {icon && (<Image source={icon} style={styles.img} className={'${iconsStyle}'} /> )}
           <TextInput className={ 'rounded-full p-4 font-JakartaSemiBold text-[15px] flex-1 ${inputStyle} text-left ' } //style txt2
           secureTextEntry={secureTextEntry}
           {...props}
